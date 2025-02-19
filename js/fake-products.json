@@ -1,0 +1,114 @@
+[
+  {
+    "img": "https://placehold.co/600x400/0000FF/FFFFFF?text=Galactic+Telescope",
+    "title": "Galactic Telescope",
+    "description": "A high-powered telescope for stargazing and exploring deep space.",
+    "stars": 5,
+    "price": "£199.99"
+  },
+  {
+    "img": "https://placehold.co/600x400/FF0000/FFFFFF?text=Martian+Rover+Toy",
+    "title": "Martian Rover Toy",
+    "description": "A detailed model of the latest Mars exploration rover.",
+    "stars": 4,
+    "price": "£29.99"
+  },
+  {
+    "img": "https://placehold.co/600x400/00FF00/000000?text=Lunar+Globe",
+    "title": "Lunar Globe",
+    "description": "A glow-in-the-dark moon globe with detailed craters and landmarks.",
+    "stars": 5,
+    "price": "£14.99"
+  },
+  {
+    "img": "https://placehold.co/600x400/FFFF00/000000?text=NASA+Backpack",
+    "title": "NASA Backpack",
+    "description": "A stylish and durable backpack with an official NASA logo.",
+    "stars": 4,
+    "price": "£34.99"
+  },
+  {
+    "img": "https://placehold.co/600x400/000000/FFFFFF?text=Solar+System+Model",
+    "title": "Solar System Model",
+    "description": "An educational 3D model of our solar system with rotating planets.",
+    "stars": 5,
+    "price": "£24.99"
+  },
+  {
+    "img": "https://placehold.co/600x400/800080/FFFFFF?text=Astronaut+Helmet",
+    "title": "Astronaut Helmet",
+    "description": "A replica astronaut helmet with working LED lights and a retractable visor.",
+    "stars": 4,
+    "price": "£49.99"
+  },
+  {
+    "img": "https://placehold.co/600x400/FF4500/FFFFFF?text=Rocket+Lamp",
+    "title": "Rocket Lamp",
+    "description": "A decorative lamp in the shape of a launching rocket.",
+    "stars": 4,
+    "price": "£19.99"
+  },
+  {
+    "img": "https://placehold.co/600x400/FFFFFF/0000FF?text=Black+Hole+Poster",
+    "title": "Black Hole Poster",
+    "description": "A stunning high-resolution print of a black hole.",
+    "stars": 3,
+    "price": "£9.99"
+  },
+  {
+    "img": "https://placehold.co/600x400/00CED1/000000?text=Zero+Gravity+Pen",
+    "title": "Zero Gravity Pen",
+    "description": "A pen that writes in zero gravity, underwater, and upside down.",
+    "stars": 5,
+    "price": "£12.99"
+  },
+  {
+    "img": "https://placehold.co/600x400/32CD32/FFFFFF?text=Moon+Base+LEGO+Set",
+    "title": "Moon Base LEGO Set",
+    "description": "A fun and detailed LEGO set for building your own moon base.",
+    "stars": 5,
+    "price": "£49.99"
+  },
+  {
+    "img": "https://placehold.co/600x400/FFA500/000000?text=Comet+Puzzle",
+    "title": "Comet Puzzle",
+    "description": "A challenging 1000-piece puzzle of a stunning comet streaking across space.",
+    "stars": 4,
+    "price": "£15.99"
+  },
+  {
+    "img": "https://placehold.co/600x400/00008B/FFFFFF?text=Saturn+Ring+Replica",
+    "title": "Saturn Ring Replica",
+    "description": "A scientifically accurate scale model of Saturn and its rings.",
+    "stars": 4,
+    "price": "£39.99"
+  },
+  {
+    "img": "https://placehold.co/600x400/DA70D6/000000?text=Aurora+Borealis+Lamp",
+    "title": "Aurora Borealis Lamp",
+    "description": "A colour-changing lamp simulating the Northern Lights.",
+    "stars": 5,
+    "price": "£27.99"
+  },
+  {
+    "img": "https://placehold.co/600x400/B22222/FFFFFF?text=Space+Trivia+Game",
+    "title": "Space Trivia Game",
+    "description": "A fun and educational game testing your knowledge of space.",
+    "stars": 3,
+    "price": "£18.99"
+  },
+  {
+    "img": "https://placehold.co/600x400/2E8B57/FFFFFF?text=Galaxy+Projector",
+    "title": "Galaxy Projector",
+    "description": "A projector that fills your room with moving stars and nebulae.",
+    "stars": 5,
+    "price": "£44.99"
+  },
+  {
+    "img": "https://placehold.co/600x400/8B0000/FFFFFF?text=ISS+Model+Kit",
+    "title": "ISS Model Kit",
+    "description": "A build-your-own model of the International Space Station.",
+    "stars": 4,
+    "price": "£59.99"
+  }
+]

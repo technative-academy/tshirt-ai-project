@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buy the brains | Ask the Brains</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="module" defer src="../js/script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo">
+          <img src="../images/logo.png" alt="Ask the brains" />
+        </div>
+        <nav class="header__nav">
+          <a href="../" class="header__link">Home</a>
+          <a href="../about/" class="header__link">About</a>
+          <a href="../ask/" class="header__link">Ask</a>
+          <a href="./" class="header__link header__link--active">Shop</a>
+        </nav>
+      </div>
+      <div class="header__titles">
+        <h1 class="header__title">Buy the brains</h1>
+        <p class="header__subtitle">
+          We need to shift some of this stuff so we can continue to operate,
+          please help us
+        </p>
+      </div>
+    </header>
+    <main class="main">
+      <section class="search">
+        <div class="search__input-wrapper">
+          <input
+            type="text"
+            class="search__input"
+            placeholder="Search products"
+          />
+          <button class="button button--primary search__submit">Search!</button>
+        </div>
+        <div class="search__footer">
+          <p class="search__result-count"></p>
+          <select class="search__sort">
+            <option>Sort by: Price (low to high)</option>
+          </select>
+        </div>
+        <p class="search__loading">Loading...</p>
+      </section>
+      <section class="products">
+        <h2 class="products__title">Products</h2>
+        <div class="products__list"></div>
+        <div class="products__show-more">
+          <button class="button button--primary">Show more</button>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer__links">
+        <a href="#" class="footer__link">Terms and Conditions</a> |
+        <a href="#" class="footer__link">Cookies</a>
+      </p>
+      <p class="footer__copyright">&copy; 202x</p>
+    </footer>
+  </body>
+</html>

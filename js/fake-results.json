@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Jupiter",
+    "description": "A big planet"
+  },
+  {
+    "title": "Saturn",
+    "description": "A planet with rings"
+  },
+  {
+    "title": "The Moon",
+    "description": "Not a planet"
+  },
+  {
+    "title": "Aliens",
+    "description": "The truth is out there..."
+  }
+]

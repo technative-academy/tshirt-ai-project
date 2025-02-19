@@ -1,0 +1,32 @@
+/* Results */
+.results {
+  display: none;
+  text-align: left;
+  padding: var(--spacing-l);
+  border-top: 2px solid var(--colour-background-light);
+}
+
+.results.is-shown {
+  display: block;
+}
+
+.results__list {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: var(--spacing-l);
+}
+
+.results__item {
+  background: var(--colour-background-white);
+  color: var(--colour-text-dark);
+  padding: var(--spacing-l);
+  border: 1px solid var(--colour-background-light);
+  border-radius: var(--border-radius-l);
+}
+
+.results__show-more {
+  margin-top: var(--spacing-l);
+  padding: var(--spacing-l);
+  text-align: center;
+}

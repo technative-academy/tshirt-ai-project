@@ -1,0 +1,13 @@
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--width-max);
+  padding: var(--spacing-l);
+}
+.footer__link {
+  text-decoration: none;
+}
