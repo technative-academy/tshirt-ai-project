@@ -38,7 +38,7 @@ class Shop {
       this.productsList.removeChild(this.productsList.lastChild);
     }
 
-    const url = "../js/fake-products.json";
+    const url = "https://ai-project.technative.dev.f90.co.uk/products/egg";
     try {
       const response = await fetch(url);
       if (!response.ok) {
@@ -58,7 +58,9 @@ class Shop {
 
   processProducts(data) {
     const searchTerm = this.searchInput.value.toLowerCase();
-    const filteredProducts = data.filter(
+    const serverImgUrl = "https://ai-project.technative.dev.f90.co.uk/"
+    console.log(data.products)
+    const filteredProducts = data.products.filter(
       (product) =>
         product.title.toLowerCase().includes(searchTerm) ||
         product.description.toLowerCase().includes(searchTerm)
@@ -72,14 +74,20 @@ class Shop {
       this.productsContainer.classList.remove("is-shown");
     }
 
-    filteredProducts.forEach((product) => {
+    const sortedFilteredProducts = filteredProducts.sort(
+      function(a,b) {
+        return a.price - b.price;
+      }
+    );
+
+    sortedFilteredProducts.forEach((product) => {
       const productsItem = document.createElement("div");
       productsItem.classList.add("products__item");
       this.productsList.appendChild(productsItem);
 
       const productsItemImage = document.createElement("img");
       productsItemImage.classList.add("products__item-image");
-      productsItemImage.src = product.img;
+      productsItemImage.src = serverImgUrl + product.image;
       productsItem.appendChild(productsItemImage);
 
       const productsItemTitle = document.createElement("h3");
@@ -99,7 +107,7 @@ class Shop {
 
       const productsItemPrice = document.createElement("p");
       productsItemPrice.classList.add("products__item-price");
-      productsItemPrice.textContent = product.price;
+      productsItemPrice.textContent = "£ " + product.price;
       productsItem.appendChild(productsItemPrice);
     });
   }

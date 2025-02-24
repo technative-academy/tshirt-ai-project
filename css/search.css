@@ -32,6 +32,10 @@
   padding-right: var(--spacing-xl);
 }
 
+.search__sort {
+  padding: var(--spacing-l);
+}
+
 .search__footer {
   margin-top: var(--spacing-l);
   display: flex;
