@@ -10,4 +10,5 @@
 }
 .footer__link {
   text-decoration: none;
+  color: var(--colour-primary);
 }

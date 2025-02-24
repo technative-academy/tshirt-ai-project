@@ -29,7 +29,6 @@
 /* header nav */
 
 .header__nav {
-  border-bottom: 1px solid var(--colour-text-light);
   padding-bottom: 5px;
   display: flex;
   gap: var(--spacing-l);
@@ -44,6 +43,7 @@
 
 .header__link {
   color: var(--colour-text-light);
+  
   text-decoration: none;
   position: relative;
 }

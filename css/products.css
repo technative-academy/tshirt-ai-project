@@ -23,6 +23,14 @@
   padding: var(--spacing-l);
   border: 1px solid var(--colour-background-light);
   border-radius: var(--border-radius-l);
+
+  display: grid;
+  grid-template-rows: 4fr 1fr 2fr auto auto;
+  gap: 1em;
+
+  > * {
+    margin: 0;
+  }
 }
 
 @media (min-width: 800px) {
@@ -33,6 +41,7 @@
 
 .products__item-image {
   width: 100%;
+  aspect-ratio: 1 / 1;
 }
 
 .products__show-more {
