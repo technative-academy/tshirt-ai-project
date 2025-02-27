@@ -1,73 +1,73 @@
 /* Ask Section */
 .ask {
-  padding: var(--spacing-xl) var(--spacing-l);
-  text-align: left;
+    padding: var(--spacing-xl) var(--spacing-l);
+    text-align: left;
 }
 
 .ask__label {
-  display: block;
-  font-size: var(--font-size-subheading);
-  margin-bottom: var(--spacing-l);
+    display: block;
+    font-size: var(--font-size-subheading);
+    margin-bottom: var(--spacing-l);
 }
 
 .ask__input-wrapper {
-  position: relative;
+    position: relative;
 }
 
 .ask__input {
-  width: 100%;
-  border: 1px solid var(--colour-background-light);
-  border-radius: var(--border-radius-s);
-  background: var(--colour-background-light);
-  color: var(--colour-text-dark);
-  padding: var(--spacing-l);
-  font-size: var(--font-size-body);
-  font-family: var(--font-family-body);
-  line-height: 1.5;
+    width: 100%;
+    border: 1px solid var(--colour-background-light);
+    border-radius: var(--border-radius-s);
+    background: var(--colour-background-light);
+    color: var(--colour-text-dark);
+    padding: var(--spacing-l);
+    font-size: var(--font-size-body);
+    font-family: var(--font-family-body);
+    line-height: 1.5;
 }
 
 .ask__button-example {
-  position: absolute;
-  z-index: 2;
-  right: var(--spacing-l);
-  top: var(--spacing-l);
-  background: none;
-  border: none;
-  cursor: pointer;
-  opacity: 1;
-  transition: opacity 0.25s;
+    position: absolute;
+    z-index: 2;
+    right: var(--spacing-l);
+    top: var(--spacing-l);
+    background: none;
+    border: none;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.25s;
 }
 
 .ask__button-example.is-hidden {
-  opacity: 0;
-  pointer-events: none;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .ask__footer {
-  margin-top: var(--spacing-l);
+    margin-top: var(--spacing-l);
 }
 
 @media (min-width: 800px) {
-  .ask__footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+    .ask__footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 .ask__char-count {
-  font-size: var(--font-size-small);
-  font-style: italic;
+    font-size: var(--font-size-small);
+    font-style: italic;
 }
 
 .ask__char-count.has-error {
-  color: var(--colour-secondary);
+    color: var(--colour-secondary);
 }
 
 .ask__loading {
-  display: none;
+    display: none;
 }
 
 .ask__loading.is-loading {
-  display: block;
+    display: block;
 }
