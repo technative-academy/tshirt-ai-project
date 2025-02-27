@@ -1,6 +1,6 @@
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #6a00f4, #ff0080);
+    background: linear-gradient(135deg, #0c0c0c, #10caef);
     color: white;
     padding: 60px 20px;
 }
@@ -32,7 +32,7 @@
 }
 
 button {
-    background: purple;
+    background: rgb(36, 136, 243);
     color: white;
     padding: 10px 15px;
     margin: 10px;
@@ -42,5 +42,5 @@ button {
 }
 
 button:hover {
-    background: darkviolet;
+    background: rgba(29, 155, 244, 0.752);
 }
