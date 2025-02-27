@@ -1,0 +1,74 @@
+/* Tabs */
+.tabs {
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.tab-button {
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.tab-button.active {
+    color: #6a00f4;
+    border-bottom: 2px solid #6a00f4;
+}
+
+/* Tab Content */
+.tab-content {
+    display: none;
+    background: white;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* About Team Section */
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    text-align: center;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Makes the images round */
+    object-fit: cover;
+    border: 3px solid #6a00f4; /* Purple border */
+}
+
+.team-member h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+}
+
+.team-member p {
+    font-size: 14px;
+    color: #777;
+}
