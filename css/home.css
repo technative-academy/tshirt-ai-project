@@ -1,0 +1,46 @@
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #6a00f4, #ff0080);
+    color: white;
+    padding: 60px 20px;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+}
+
+.hero span {
+    font-weight: bold;
+}
+
+/* AI Service Section */
+.ai-service {
+    background: white;
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ai-service h3 span {
+    color: purple;
+}
+
+.cta-buttons {
+    margin-top: 20px;
+}
+
+button {
+    background: purple;
+    color: white;
+    padding: 10px 15px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: darkviolet;
+}
