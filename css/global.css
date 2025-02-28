@@ -1,10 +1,10 @@
 /* Variables */
 :root {
-    --colour-primary: #000000;
-    --colour-secondary: #ffffff;
-    --colour-background-white: white;
-    --colour-background-light: #f0f0f0;
-    --colour-background-dark: black;
+    --colour-primary: #00a6fb;
+    --colour-secondary: #0081a7;
+    --colour-background-white: #c4c1c19d;
+    --colour-background-light: #61a6d5;
+    --colour-background-dark: #0a0a0a;
     --colour-text-light: white;
     --colour-text-dark: black;
 
