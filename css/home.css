@@ -1,6 +1,6 @@
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #0c0c0c, #10caef);
+    background: linear-gradient(135deg, #fa5454, #10caef);
     color: white;
     padding: 60px 20px;
 }
@@ -32,15 +32,28 @@
 }
 
 button {
-    background: rgb(36, 136, 243);
+    background: #2488f3; /* Bright Cyber Blue */
     color: white;
-    padding: 10px 15px;
+    padding: 12px 18px;
     margin: 10px;
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
 }
 
+/* Hover Effect */
 button:hover {
-    background: rgba(29, 155, 244, 0.752);
+    background: #1d9bf4; /* Softer Neon Blue */
+    transform: translateY(-3px) scale(1.05); /* Lift & Slightly Enlarge */
+    box-shadow: 0px 4px 15px rgba(36, 136, 243, 0.5); /* Neon Glow Effect */
+}
+
+/* Active (When Clicking) */
+button:active {
+    transform: translateY(0px) scale(0.98); /* Slight Press Effect */
+    box-shadow: 0px 2px 10px rgba(36, 136, 243, 0.3);
 }
