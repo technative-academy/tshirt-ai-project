@@ -1,6 +1,6 @@
 # 👕 T-shirtPimper
 
-**T-shirtPimper** is a powerful and intuitive platform for designing and customizing T-shirts with AI-powered assistance. Whether you’re a creator, entrepreneur, or just a fan of custom fashion, T-shirtPimper makes it easy to bring your ideas to life.
+**T-shirtPimper** is a powerful and intuitive platform for designing and customising T-shirts with AI-powered assistance. Whether you’re a creator, entrepreneur, or just a fan of custom fashion, T-shirtPimper makes it easy to bring your ideas to life.
 
 ## 🚀 Live Demo
 
@@ -25,7 +25,7 @@
 ## 🌟 Features
 
 ✅ **AI-Powered Design Assistant** – Get smart design suggestions and generate unique T-shirt prints effortlessly.  
-✅ **Easy-to-Use Customization** – Modify fonts, colors, images, and layouts to fit your style.  
+✅ **Easy-to-Use Customization** – Modify fonts, colours, images, and layouts to fit your style.  
 ✅ **High-Quality Printing** – Order prints directly from the platform and get them delivered.  
 ✅ **UI** – A sleek, modern theme for a premium user experience.  
 ✅ **Responsive & Mobile-Friendly** – Works smoothly on all devices.
