@@ -3,18 +3,20 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>About | Ask the Brains</title>
+        <title>About | T-shirtPimper</title>
         <link rel="stylesheet" href="../css/style.css" />
         <script type="module" defer src="../js/script.js"></script>
     </head>
+
     <body>
+        <!-- header -->
         <header class="header">
             <div class="header__content">
                 <div class="header__logo">
                     <img
                         class="logo"
                         src="../images/logo.png"
-                        alt="Ask the brains"
+                        alt="T-shirtPimper Logo"
                     />
                 </div>
                 <nav class="header__nav">
@@ -27,13 +29,96 @@
                 </nav>
             </div>
             <div class="header__titles">
-                <h1 class="header__title">About the brains</h1>
-                <p class="header__subtitle">...</p>
+                <h1 class="header__title">About Us</h1>
+                <p class="header__subtitle"></p>
             </div>
         </header>
+
+        <!-- main -->
         <main class="main">
-            <p>...</p>
+            <!-- Tabs Navigation -->
+            <div class="tabs">
+                <button class="tab-button active" data-tab="app">
+                    About the app
+                </button>
+                <button class="tab-button" data-tab="team">
+                    About the team
+                </button>
+            </div>
+
+            <!-- Tab Content -->
+            <div class="tab-content active" id="app">
+                <blockquote>
+                    <p>
+                        Welcome to the future of AI-driven interactions! Our
+                        revolutionary platform combines cutting-edge artificial
+                        intelligence technology...
+                    </p>
+                </blockquote>
+                <p>
+                    🚀 T-shirtPimper is the ultimate platform for designing and
+                    customizing your own T-shirts with ease. Whether you’re an
+                    artist, a business, or just someone who loves creative
+                    fashion, our app gives you the freedom to bring your ideas
+                    to life.
+                </p>
+                <p>
+                    🎨 Unleash Your Creativity – Choose from a wide range of
+                    colors, fonts, graphics, and AI-generated designs to create
+                    unique apparel that stands out.
+                </p>
+                <p>
+                    ⚡ AI-Powered Customization – Need inspiration? Our smart AI
+                    assists you in generating stylish designs, ensuring your
+                    T-shirts are always fresh and trendy.
+                </p>
+                <p>
+                    🛒 Seamless Ordering & Printing – Once you’ve perfected your
+                    design, order high-quality prints and get them delivered
+                    right to your doorstep. At T-shirtPimper, we believe that
+                    fashion should be personal, expressive, and fun. Start
+                    designing today and wear your imagination!
+                </p>
+            </div>
+
+            <div class="tab-content" id="team">
+                <p>
+                    We are a small team of AI enthusiasts who believe in the
+                    power of automation and creative design.
+                </p>
+                <p>Meet the people behind T-shirtPimper:</p>
+
+                <div class="team-container">
+                    <div class="team-member">
+                        <a href="https://github.com/ramseyediku"
+                            ><img src="../images/ramsey.png" alt="Ramsey" />
+                            <h3>Ramsey</h3>
+                            <p>Founder & Lead Developer</p></a
+                        >
+                    </div>
+                    <div class="team-member">
+                        <a href="https://github.com/HelderBalbino">
+                            <img
+                                src="../images/helder.jpeg"
+                                alt="Helder Balbino"
+                            />
+                            <h3>Helder Balbino</h3>
+                            <p>Founder & Lead Developer</p>
+                        </a>
+                    </div>
+
+                    <div class="team-member">
+                        <a href="https://github.com/matthewyoung94">
+                            <img src="../images/matt.jpeg" alt="Matt" />
+                            <h3>Matt</h3>
+                            <p>Founder & Lead Developer</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </main>
+
+        <!-- footer -->
         <footer class="footer">
             <p class="footer__links">
                 <a href="#" class="footer__link">Terms and Conditions</a> |

@@ -3,7 +3,12 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Ask | Ask the Brains</title>
+
+        <meta
+            name="description"
+            content="Ask the Brains - Get AI-generated answers to your open-ended questions!"
+        />
+        <title>Ask</title>
         <link rel="stylesheet" href="../css/style.css" />
         <script type="module" defer src="../js/script.js"></script>
     </head>
@@ -14,10 +19,11 @@
                     <img
                         class="logo"
                         src="../images/logo.png"
-                        alt="Ask the brains"
+
+                        alt="Logo"
                     />
                 </div>
-                <nav class="header__nav">
+                <nav class="header__nav" aria-label="Main Navigation">
                     <a href="../" class="header__link">Home</a>
                     <a href="../about/" class="header__link">About</a>
                     <a href="./" class="header__link header__link--active"
@@ -27,10 +33,12 @@
                 </nav>
             </div>
             <div class="header__titles">
-                <h1 class="header__title">Ask the brains</h1>
+
+                <h1 class="header__title">Ask for suggestions</h1>
                 <p class="header__subtitle">
-                    Post an open-ended question here and see some suggestions
-                    from our specially trained AI...
+                    Search here for some suggestions
+                    from our AI...
+
                 </p>
             </div>
         </header>
@@ -44,8 +52,15 @@
                         id="question"
                         class="ask__input"
                         placeholder="Enter your question here"
+
+                        aria-label="Question Input"
                     ></textarea>
-                    <button class="ask__button-example">Use an example</button>
+                    <button
+                        class="ask__button-example"
+                        aria-label="Use an example question"
+                    >
+                        Use an example
+                    </button>
                 </div>
                 <div class="ask__footer">
                     <p class="ask__char-count"></p>
@@ -53,24 +68,42 @@
                         <div class="buttons">
                             <button
                                 class="button button--secondary ask__button-reset"
+
+                                aria-label="Reset question"
                             >
                                 Ask a new question
                             </button>
                             <button
                                 class="button button--primary ask__button-ask"
+
+                                aria-label="Submit question"
                             >
-                                Ask the brains!
-                            </button>
+                                Ask!
+          </button>
                         </div>
                     </div>
                 </div>
-                <p class="ask__loading">Loading...</p>
+
+                <p class="ask__loading" aria-live="polite">Loading...</p>
+
             </section>
             <section class="results">
                 <h2 class="results__title">Results</h2>
                 <div class="results__list"></div>
                 <div class="results__show-more">
-                    <button class="button button--primary">Show more</button>
+
+                    <button
+                        class="button button--primary"
+                        aria-label="Show more results"
+                    >
+                        Show more
+                    </button>
+                </div>
+                <div class="results__clear">
+                    <button class="button button--secondary">
+                        Clear Results
+                    </button>
+
                 </div>
             </section>
         </main>
@@ -79,7 +112,9 @@
                 <a href="#" class="footer__link">Terms and Conditions</a> |
                 <a href="#" class="footer__link">Cookies</a>
             </p>
-            <p class="footer__copyright">&copy; 2025</p>
+
+            <p class="footer__copyright">&copy; 2025 T Shirt Pimper</p>
+
         </footer>
     </body>
 </html>
