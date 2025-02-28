@@ -8,7 +8,7 @@
 
 ## 📸 Screenshots
 
-![Movie Search Screenshot]()
+![T-shirtPimper Screenshots]()
 
 ---
 
@@ -17,7 +17,7 @@
 -   **HTML** - For structuring the web page
 -   **CSS** - For styling and responsiveness
 -   **JavaScript (ES6+)** - For dynamic content and API interaction
--   **OMDb API** - For fetching movie data
+-   **API** - For fetching data
 -   **Git & GitHub** - For version control and project hosting
 
 ---
