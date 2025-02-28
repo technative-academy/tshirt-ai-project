@@ -4,6 +4,8 @@ class Shop {
     if (this.searchContainer) {
       this.searchInput = this.searchContainer.querySelector(".search__input");
       this.searchButton = this.searchContainer.querySelector(".search__submit");
+      this.sortSelector = this.searchContainer.querySelector(".search__sort");
+
       this.searchResultCount = this.searchContainer.querySelector(
         ".search__result-count"
       );
@@ -18,7 +20,8 @@ class Shop {
   init() {
     if (!this.searchContainer) return;
     this.searchInput.addEventListener("input", (e) => this.checkInput(e));
-    this.searchButton.addEventListener("click", (e) => this.search(e));
+    this.searchButton.addEventListener("click", (e) => this.search(e, this.sortSelector.value));
+    this.sortSelector.addEventListener("change", (e)=> {this.search(e, this.sortSelector.value);})
     this.checkInput();
     this.search();
   }
@@ -27,7 +30,7 @@ class Shop {
     this.searchButton.disabled = this.searchInput.value.length === 0;
   }
 
-  async search(e) {
+  async search(e, sortType) {
     if (e) e.preventDefault();
 
     this.loading.classList.add("is-loading");
@@ -47,7 +50,7 @@ class Shop {
 
       await setTimeout(async () => {
         const json = await response.json();
-        this.processProducts(json);
+        this.processProducts(json, sortType);
         this.loading.classList.remove("is-loading");
       }, 1000);
     } catch (error) {
@@ -56,15 +59,14 @@ class Shop {
     }
   }
 
-  processProducts(data) {
+  processProducts(data, sortingType) {
     const searchTerm = this.searchInput.value.toLowerCase();
     const serverImgUrl = "https://ai-project.technative.dev.f90.co.uk/"
-    console.log(data.products)
     const filteredProducts = data.products.filter(
       (product) =>
         product.title.toLowerCase().includes(searchTerm) ||
         product.description.toLowerCase().includes(searchTerm)
-    );
+    );  
 
     this.searchResultCount.textContent = `${filteredProducts.length} products found`;
 
@@ -73,14 +75,26 @@ class Shop {
     } else {
       this.productsContainer.classList.remove("is-shown");
     }
+    
+    if ((!sortingType) || sortingType == "Sort by: Price (low to high)") {
+      filteredProducts.sort(
+        function(a,b) {
+          return a.price - b.price;
+        }
+      );
+    } else if (sortingType == "Sort by: Price (high to low)") {
+      filteredProducts.sort(
+        function(a,b) {
+          return b.price - a.price;
+        }
+      )
+    } else if (sortingType == "Sort alphabetically (A to Z)") {
+      filteredProducts.sort();
+    } else {
+      filteredProducts.sort().reverse();
+    }
 
-    const sortedFilteredProducts = filteredProducts.sort(
-      function(a,b) {
-        return a.price - b.price;
-      }
-    );
-
-    sortedFilteredProducts.forEach((product) => {
+    filteredProducts.forEach((product) => {
       const productsItem = document.createElement("div");
       productsItem.classList.add("products__item");
       this.productsList.appendChild(productsItem);
